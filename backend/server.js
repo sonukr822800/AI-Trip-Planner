@@ -35,3 +35,8 @@ app.get("/protected", (req, res) => {
         res.json({ message: "Protected content accessed", user });
     });
 });
+
+
+app.get("/", (req, res) => {
+    res.send("Welcome to AI Trip Planner Backend!");
+});
